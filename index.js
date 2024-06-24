@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let selectedCategory = "";
   const renderProducts = (filteredProducts) => {
     productList.innerHTML = "";
-    
+
     filteredProducts.forEach((product) => {
       productList.innerHTML += `
           <div class="product-card">
@@ -223,8 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <span class="star" data-value="${i}">&#9733;</span>
               `
                 )
-                 .join("")
-              }
+                .join("")}
             </div>
             <button class="add-cart">Add to Cart</button>
           </div>
@@ -235,13 +234,13 @@ document.addEventListener("DOMContentLoaded", () => {
       productList.innerHTML = '<p class="not-found-msg">Product not found</p>';
       return;
     }
-    
-  const stars = document.querySelectorAll(".star");
+
+    const stars = document.querySelectorAll(".star");
     stars.forEach((star) => {
       star.addEventListener("click", handleRating);
     });
     updateRatings();
-   };
+  };
 
   const handleRating = (event) => {
     const star = event.target;
@@ -273,7 +272,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   };
-  
 
   const filterProducts = (searchTerm, category) => {
     let filteredProducts = products;
@@ -289,7 +287,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     renderProducts(filteredProducts);
   };
-
 
   searchInput.addEventListener("input", (e) => {
     const searchTerm = e.target.value;
@@ -308,6 +305,5 @@ document.addEventListener("DOMContentLoaded", () => {
     filterProducts(searchInput.value, selectedCategory);
   });
 
-
   renderProducts(products);
- });
+});
