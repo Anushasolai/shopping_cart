@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ProductDetails</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="index.js"></script>
+  </head>
+  <body>
     <header>
-        <nav>
-            
-            <div class="logo"><i class="fa-solid fa-cart-shopping"></i>MyShop</div>
-            <ul>
-                <li>
-                    <div class="search-container">
-                    <input type="text" id="search" placeholder="       Search products...">
-                    <i class="fa fa-search search-icon"></i>
-                   </div>
-                </li>
-                
-            </ul>
-        </nav>
+      <nav>
+        <div class="logo"><i class="fa-solid fa-cart-shopping"></i>MyShop</div>
+        <ul>
+          <li>
+            <div class="search-container">
+              <input
+                type="text"
+                id="search"
+                placeholder="       Search products..."
+              />
+              <i class="fa fa-search search-icon"></i>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </header>
     <aside>
-        <ul>
-            <li><button id="home">Home</button></li>
-            <li><button class="category-btn" data-category="mobiles">Mobiles</button></li>
-            <li><button class="category-btn" data-category="laptops">Laptops</button></li>
-            <li><button class="category-btn" data-category="cameras">Cameras</button></li>
-            <li><button class="category-btn" data-category="watches">Watches</button></li>
-            <li><button class="category-btn" data-category="airpods">Airpods</button></li>
-        </ul>
+      <ul>
+        <li><button id="home">Home</button></li>
+        <li>
+          <button class="category-btn" data-category="mobiles">Mobiles</button>
+        </li>
+        <li>
+          <button class="category-btn" data-category="laptops">Laptops</button>
+        </li>
+        <li>
+          <button class="category-btn" data-category="cameras">Cameras</button>
+        </li>
+        <li>
+          <button class="category-btn" data-category="watches">Watches</button>
+        </li>
+        <li>
+          <button class="category-btn" data-category="airpods">Airpods</button>
+        </li>
+      </ul>
     </aside>
     <main>
-        <div id="product-list" class="product-list"></div>
+      <div id="product-list" class="product-list"></div>
     </main>
-    <script src="index.js"></script>
-    
-</body>
+  </body>
 </html>
